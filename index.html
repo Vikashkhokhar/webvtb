@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VTB Build Estate</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens: {
+            'xs': '480px',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="icon" href="./assests/logo2.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+</head>
+<body class="bg-gray-100 text-gray-800 scroll-smooth">
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center py-4 px-4 md:px-6">
+    <div class="flex items-center space-x-2 md:space-x-10">
+      <img src="./assests/logo2_colored.svg" alt="DreamLand Properties Logo" class="h-10 md:h-14 w-auto">
+      <h1 class="font-serif tracking-[1px] md:tracking-[2px] text-lg md:text-[28px] font-bold text-[#022269]">VTB BUILD ESTATE</h1>
+    </div>
+    <div class="flex items-center space-x-2 md:space-x-8">
+      <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+      <nav id="main-nav" class="hidden md:flex space-x-2 md:space-x-4">
+        <a href="#home" class="font-serif text-[16px] md:text-small hover:text-[#022269]">HOME</a>
+        <a href="#services" class="font-serif text-[16px] md:text-small hover:text-[#022269]">SERVICES</a>
+        <a href="#listings" class="font-serif text-[16px] md:text-small hover:text-[#022269]">PROPERTIES</a>
+        <a href="#contact" class="font-serif text-[16px] md:text-small hover:text-[#022269]">CONTACT</a>
+      </nav>
+      <div class="hidden md:flex items-center space-x-3 text-lg">
+        <a href="#" target="_blank"  class="w-8 h-8 flex items-center justify-center rounded-full bg-[#3b5998] text-white hover:scale-110 transition duration-300">
+            <i class="fab fa-facebook-f"></i>
+         </a>
+         <a href="https://www.instagram.com/vtbgroup441?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"  class="w-8 h-8 flex items-center justify-center rounded-full bg-[#e1306c] text-white hover:scale-110 transition duration-300">
+           <i class="fab fa-instagram"></i>
+         </a> 
+         <a href="https://wa.me/919672516938" class="w-8 h-8 flex items-center justify-center rounded-full bg-[#25d366] text-white hover:scale-110 transition duration-300">
+           <i class="fab fa-whatsapp"></i>
+         </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white w-full px-4 pb-4">
+    <div class="flex flex-col space-y-3">
+      <a href="#home" class="font-serif text-gray-800 py-2 border-b border-gray-100">HOME</a>
+      <a href="#services" class="font-serif text-gray-800 py-2 border-b border-gray-100">SERVICES</a>
+      <a href="#listings" class="font-serif text-gray-800 py-2 border-b border-gray-100">PROPERTIES</a>
+      <a href="#contact" class="font-serif text-gray-800 py-2">CONTACT</a>
+    </div>
+    <div class="flex items-center justify-center space-x-4 mt-4">
+      <a href="#" target="_blank"  class="w-10 h-10 flex items-center justify-center rounded-full bg-[#3b5998] text-white hover:scale-110 transition duration-300">
+          <i class="fab fa-facebook-f"></i>
+       </a>
+       <a href="https://www.instagram.com/vtbgroup441?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"  class="w-10 h-10 flex items-center justify-center rounded-full bg-[#e1306c] text-white hover:scale-110 transition duration-300">
+         <i class="fab fa-instagram"></i>
+       </a> 
+       <a href="https://wa.me/919672516938" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#25d366] text-white hover:scale-110 transition duration-300">
+         <i class="fab fa-whatsapp"></i>
+       </a>
+    </div>
+  </div>
+</header>
+
+<section id="home" class="bg-cover bg-center h-[32rem] md:h-[40rem] scroll-mt-20" style="background-image: url('./assests/ChatGPT\ Image\ May\ 15\,\ 2025\,\ 12_52_40\ PM.png');">
+  <div class="h-full w-full bg-black bg-opacity-50 flex items-center justify-center" data-aos="zoom-in">
+    <h2 class="text-white text-2xl md:text-4xl lg:text-5xl font-bold px-4 text-center">Buy & Sell Properties with Ease</h2>
+  </div>
+</section>
+
+<!--Service Section-->
+<section id="services" class="py-12 md:py-16 text-white scroll-mt-20">
+  <div class="container mx-auto px-4 md:px-6">
+    <h3 class="text-3xl md:text-4xl font-bold text-center text-[#022269] mb-8 md:mb-10" data-aos="fade-up">Our Services</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      <div class="p-4 md:p-6 bg-white rounded-3xl shadow-md p-4 md:p-6 hover:shadow-xl hover:scale-105 transition duration-300">
+        <h4 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-black">Buy Properties</h4>
+        <p class="text-[#014072] text-base md:text-lg leading-relaxed">Find your dream home from our wide range of houses, villas, plots across prime locations.</p>
+      </div>
+      <div class="p-4 md:p-6 bg-white rounded-3xl shadow-md p-4 md:p-6 hover:shadow-xl hover:scale-105 transition duration-300">
+        <h4 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-black">Sell Properties</h4>
+        <p class="text-[#014072] text-base md:text-lg leading-relaxed">List your property with us and reach genuine, verified buyers for a hassle-free selling experience.</p>
+      </div>
+      <div class="p-4 md:p-6 bg-white rounded-3xl shadow-md p-4 md:p-6 hover:shadow-xl hover:scale-105 transition duration-300">
+        <h4 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-black">Legal Assistance</h4>
+        <p class="text-[#014072] text-base md:text-lg leading-relaxed">Get expert help with property registration, agreement drafting, and legal documentation to ensure a smooth transaction.</p>
+      </div>
+
+     <div class="p-4 md:p-6 bg-white rounded-3xl shadow-md p-4 md:p-6 hover:shadow-xl hover:scale-105 transition duration-300">
+        <h4 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-black">Commercial Properties</h4>
+        <p class="text-[#014072] text-base md:text-lg leading-relaxed">Discover office spaces, shops, and commercial buildings suited for your business needs and investment goals.</p>
+      </div>
+      <div class="p-4 md:p-6 bg-white rounded-3xl shadow-md p-4 md:p-6 hover:shadow-xl hover:scale-105 transition duration-300">
+        <h4 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-black">Rent Or Lease Properties</h4>
+        <p class="text-[#014072] text-base md:text-lg leading-relaxed">Whether you're a landlord or a tenant, we simplify the process of renting or leasing residential and commercial spaces.</p>
+      </div>
+      <div class="p-4 md:p-6 bg-white rounded-3xl shadow-md p-4 md:p-6 hover:shadow-xl hover:scale-105 transition duration-300">
+        <h4 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-black">Farm House Properties</h4>
+        <p class="text-[#014072] text-base md:text-lg leading-relaxed">Explore tranquil farmhouse listings ideal for weekend getaways, events, or long-term investment, with full legal support.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--Featued Section-->
+<section id="listings" class="py-12 md:py-16 bg-blue-50 scroll-mt-20">
+  <div class="container mx-auto px-4 md:px-6">
+    <h3 class="text-3xl md:text-4xl font-bold text-center text-[#022269] mb-8 md:mb-10" data-aos="fade-up">Featured Properties</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+      <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform transition-all hover:scale-105 duration-300" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" class="w-full h-40 md:h-48 object-cover rounded-t-3xl">
+        <div class="p-4 md:p-6">
+          <h4 class="font-bold text-xl md:text-2xl text-[#022269] mb-2 md:mb-3">Luxury Villa in Jaipur</h4>
+          <p class="text-gray-600 text-base md:text-lg">₹2.5 Cr - 5 BHK with garden & pool</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform transition-all hover:scale-105 duration-300" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://r1imghtlak.mmtcdn.com/8acaac36-78ea-4941-a557-39a6ae38d5f4.webp" class="w-full h-40 md:h-48 object-cover rounded-t-3xl">
+        <div class="p-4 md:p-6">
+          <h4 class="font-bold text-xl md:text-2xl text-[#022269] mb-2 md:mb-3">Farm Land Near Kalwar Road</h4>
+          <p class="text-gray-600 text-base md:text-lg">₹1.1 Cr - 2 Acres suitable for farmhouse</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform transition-all hover:scale-105 duration-300" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://homezonline.in/wp-content/uploads/2022/07/Amazing-small-duplex-house.jpeg" class="w-full h-40 md:h-48 object-cover rounded-t-3xl">
+        <div class="p-4 md:p-6">
+          <h4 class="font-bold text-xl md:text-2xl text-[#022269] mb-2 md:mb-3">Plot for Sale in Mansarovar</h4>
+          <p class="text-gray-600 text-base md:text-lg">₹85 Lac - 250 Sq. Yard Residential Plot</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Running Project-->
+
+<section class="bg-blue-50 py-12 px-4 md:px-10">
+  <h2 class="text-3xl font-bold text-center text-[#022269] mb-10" data-aos="fade-down">🏗️ Running Residential Projects</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <!-- Project Card -->
+    <div 
+      class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:rotate-1 hover:scale-105 hover:shadow-2xl"
+      data-aos="zoom-in"
+      data-aos-delay="100"
+    >
+      <img src="./assests/pexels-asphotograpy-101808.jpg" alt="Project Image" class="w-full h-56 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold mb-1">Sunrise Heights</h3>
+        <p class="text-gray-600 mb-3">📍 Location: Sector 45, Noida</p>
+        <ul class="text-sm text-gray-700 space-y-1">
+          <li>✅ 2 & 3 BHK Apartments</li>
+          <li>✅ Clubhouse, Pool, Gym</li>
+          <li>✅ 24x7 Security & Power Backup</li>
+          <li>✅ Possession: Dec 2025</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div 
+      class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:-rotate-1 hover:scale-105 hover:shadow-2xl"
+      data-aos="zoom-in"
+      data-aos-delay="200"
+    >
+      <img src="./assests/pexels-binyaminmellish-106399.jpg" alt="Project Image" class="w-full h-56 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold mb-1">Green Valley Residences</h3>
+        <p class="text-gray-600 mb-3">📍 Location: New Town, Kolkata</p>
+        <ul class="text-sm text-gray-700 space-y-1">
+          <li>✅ 1, 2, 3 BHK Options</li>
+          <li>✅ Landscaped Gardens</li>
+          <li>✅ Rainwater Harvesting</li>
+          <li>✅ Possession: June 2026</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div 
+      class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:rotate-2 hover:scale-105 hover:shadow-2xl"
+      data-aos="zoom-in"
+      data-aos-delay="300"
+    >
+      <img src="./assests/pexels-expect-best-79873-323780.jpg" alt="Project Image" class="w-full h-56 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold mb-1">Skyline Vista</h3>
+        <p class="text-gray-600 mb-3">📍 Location: Baner, Pune</p>
+        <ul class="text-sm text-gray-700 space-y-1">
+          <li>✅ Smart Homes with IoT</li>
+          <li>✅ Rooftop Lounge & Workspace</li>
+          <li>✅ 5-Star Green Building</li>
+          <li>✅ Possession: March 2025</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!--Gallery Section-->
+
+<section class="bg-blue-50 py-12 md:py-16 px-4" id="gallery">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10 text-[#022269]" data-aos="zoom-in">Image Gallery</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Gallery Items -->
+
+      <a href="./assests/ChatGPT Image May 15, 2025, 01_03_30 PM.png" class="glightbox block overflow-hidden rounded-xl shadow-lg group" data-gallery="gallery1" data-aos="fade-up">
+        <img
+          src="./assests/ChatGPT Image May 15, 2025, 01_03_30 PM.png"
+          alt="Gallery Image 1"
+          class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      </a>
+
+      <a href="./assests/ChatGPT Image May 15, 2025, 01_00_23 PM.png" class="glightbox block overflow-hidden rounded-xl shadow-lg group" data-gallery="gallery1" data-aos="fade-up" data-aos-delay="100">
+        <img
+          src="./assests/ChatGPT Image May 15, 2025, 01_00_23 PM.png"
+          alt="Gallery Image 2"
+          class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      </a>
+
+      <a href="./assests/ChatGPT Image May 15, 2025, 12_55_15 PM.png" class="glightbox block overflow-hidden rounded-xl shadow-lg group" data-gallery="gallery1" data-aos="fade-up" data-aos-delay="200">
+        <img
+          src="./assests/ChatGPT Image May 15, 2025, 12_55_15 PM.png"
+          alt="Gallery Image 3"
+          class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      </a>
+
+      <!-- YouTube Video -->
+      <a href="https://www.youtube.com/watch?v=DUGjNe82C-o" class="glightbox block overflow-hidden rounded-xl shadow-lg group relative" data-gallery="gallery1" data-aos="zoom-in">
+        <img
+          src="./assests/ytscr.png"
+          alt="YouTube Video"
+          class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-25 group-hover:bg-opacity-50 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+      </a>
+
+       <a href="https://www.youtube.com/watch?v=DUGjNe82C-o" class="glightbox block overflow-hidden rounded-xl shadow-lg group relative" data-gallery="gallery1" data-aos="zoom-in">
+        <img
+          src="./assests/S3.png"
+          alt="YouTube Video"
+          class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-25 group-hover:bg-opacity-50 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+      </a>
+
+      <!-- Instagram or Reel -->
+      <a href="https://www.instagram.com/reel/DH8gz9Ty7TR" target="_blank" rel="noopener noreferrer"
+         class="block overflow-hidden rounded-xl shadow-lg group relative" data-aos="zoom-in">
+        <img
+          src="./assests/yt2.png"
+          alt="Instagram Reel"
+          class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-25 group-hover:bg-opacity-50 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!--Testimonial Section-->
+<section class="bg-blue-50 py-12 md:py-16 px-4">
+  <div class="max-w-7xl mx-auto">
+    <h3 class="text-3xl md:text-4xl font-bold text-center text-[#022269] mb-8 md:mb-10" data-aos="fade">What Our Clients Say</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl shadow-md p-4 md:p-6 hover:shadow-xl hover:scale-105 transition duration-300">
+        <div class="flex items-center mb-3 md:mb-4">
+          <img src="https://i.pravatar.cc/100?img=11" alt="Sneha" class="w-12 h-12 md:w-14 md:h-14 rounded-full mr-3 md:mr-4 shadow-md">
+          <div>
+            <h3 class="text-base md:text-lg font-semibold text-gray-800">Sneha Patel</h3>
+            <p class="text-xs md:text-sm text-gray-500">Property Buyer</p>
+          </div>
+        </div>
+        <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+          Excellent service! They helped me find my dream home within days. Professional, friendly, and fast.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl shadow-md p-4 md:p-6 hover:shadow-xl hover:scale-105 transition duration-300">
+        <div class="flex items-center mb-3 md:mb-4">
+          <img src="https://i.pravatar.cc/100?img=13" alt="Amit" class="w-12 h-12 md:w-14 md:h-14 rounded-full mr-3 md:mr-4 shadow-md">
+          <div>
+            <h3 class="text-base md:text-lg font-semibold text-gray-800">Amit Sharma</h3>
+            <p class="text-xs md:text-sm text-gray-500">Real Estate Investor</p>
+          </div>
+        </div>
+        <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+          I invested in two properties through them — smooth paperwork, great ROI and full transparency.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-2xl shadow-md p-4 md:p-6 hover:shadow-xl hover:scale-105 transition duration-300">
+        <div class="flex items-center mb-3 md:mb-4">
+          <img src="https://i.pravatar.cc/100?img=21" alt="Raj" class="w-12 h-12 md:w-14 md:h-14 rounded-full mr-3 md:mr-4 shadow-md">
+          <div>
+            <h3 class="text-base md:text-lg font-semibold text-gray-800">Raj Malhotra</h3>
+            <p class="text-xs md:text-sm text-gray-500">Home Seller</p>
+          </div>
+        </div>
+        <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+          Sold my house faster than expected. Great marketing support and very responsive communication.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Contact Section-->
+<section id="contact" class="py-12 md:py-8 bg-blue-50 scroll-mt-20">
+  <div class="container mx-auto px-4 md:px-6">
+    <h3 class="text-3xl md:text-4xl font-bold text-center text-[#022269] mb-8 md:mb-10" data-aos="fade">Contact Us</h3>
+    <form id="contactForm" class="max-w-2xl mx-auto bg-white p-6 md:p-8 rounded-3xl shadow-2xl transition-transform transform hover:scale-105 duration-300" data-aos="flip-up">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <input name="name" placeholder="Name" class="border p-3 md:p-4 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-[#022269] focus:border-[#022269] transition duration-300">
+        <input name="email" type="email" placeholder="Email" class="border p-3 md:p-4 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-[#022269] focus:border-[#022269] transition duration-300">
+      </div>
+      <textarea name="message" placeholder="Your message..." class="border p-3 md:p-4 rounded-xl w-full mt-4 md:mt-6 h-32 md:h-40 focus:outline-none focus:ring-2 focus:ring-[#022269] focus:border-[#022269] transition duration-300"></textarea>
+      <button type="submit" class="mt-4 md:mt-6 bg-[#022269] text-white px-4 py-2 md:px-6 md:py-3 rounded-xl w-full hover:bg-[#014072] shadow-lg transition duration-300">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!--Footer Section-->
+<footer class="bg-[#022269] text-white py-8">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+      <div>
+        <h3 class="text-xl md:text-2xl font-semibold mb-3 md:mb-4 underline">Our Office</h3>
+        <p class="mb-2">Hatoj Kalwar Road</p>
+        <p class="mb-4">Rajasthan, India</p>
+        <div class="relative w-full h-48 md:h-60">
+          <iframe class="absolute top-0 left-0 w-full h-full"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.140385725606!2d75.6680763!3d26.962453299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4d07f02739ef%3A0x4c3370da5d9e4d45!2sVtb%20Build%20Estate%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1747210387299!5m2!1sen!2sin"
+              frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-xl md:text-2xl font-semibold mb-3 md:mb-4 underline">About Us</h3>
+        <p class="text-sm md:text-base">We are a leading company providing innovative solutions to help businesses thrive. Our team is committed to delivering high-quality products and services tailored to our clients' needs.</p>
+      </div>
+      <div>
+        <h3 class="text-xl md:text-2xl font-semibold mb-3 md:mb-4 underline">Connect With Us</h3>
+      
+       <div class="flex justify-center md:justify-start gap-3 md:gap-4 py-4 md:py-8">
+         <a href="#" target="_blank"  class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-[#3b5998] text-white hover:scale-110 transition duration-300">
+           <i class="fab fa-facebook-f text-sm md:text-base"></i>
+         </a>
+         <a href="https://www.instagram.com/vtbgroup441?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"  class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-[#e1306c] text-white hover:scale-110 transition duration-300">
+           <i class="fab fa-instagram text-sm md:text-base"></i>
+         </a>
+         <a href="https://wa.me/919672516938" class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-[#25d366] text-white hover:scale-110 transition duration-300">
+           <i class="fab fa-whatsapp text-sm md:text-base"></i>
+         </a>
+         <a href="#" target="_blank"  class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-[#ff0000] text-white hover:scale-110 transition duration-300">
+           <i class="fab fa-youtube text-sm md:text-base"></i>
+         </a>
+       </div>
+
+         <a href="tel:+919672516938"  class="group text-white font-medium flex items-center space-x-2 transition-all duration-300 ease-in-out  hover:scale-105 hover:text-[18px]">
+          <i class="fa-solid fa-phone text-sm md:text-base transform transition-transform duration-300 group-hover:animate-bounce"></i>
+          <span>+91 9672516938</span>   
+         </a>
+
+      </div>
+    </div>
+  </div>
+
+  <section id="copyright" class="bg-[#022269] text-white py-4 mb-0">
+    <div class="container text-center">
+      <p class="text-xs md:text-sm">&copy; 2025 VTB BUILD ESTATE. All rights reserved.</p>
+      <p class="text-xxs md:text-xs mt-1 md:mt-2">Designed by <a href="https://www.instagram.com/vikash_khokhar_2712/" target="_blank">VIKASH KHOKHAR</a> </p>
+    </div>
+  </section>
+</footer>
+
+
+<!--Whatsapp Sticky Button-->
+
+  <div class="fixed bottom-4 right-4 flex items-center space-x-2 z-50">
+    <p id="chatMessage" class="hidden px-4 text-[15px] leading-[1.6] bg-[#25d366] text-white rounded-[10px] mx-2 order-0 ctc-analytics ctc_cta ctc_cta_stick ht-ctc-cta ht-ctc-cta-hover">
+      Hi, How we can help you today?
+    </p>
+
+    <a id="chatButton" href="https://wa.me/919672516938?text=Hello%2C%20I%20am%20interested%20in%20your%20real%20estate%20services." target="_blank"
+      class="h-[50px] w-[50px] flex items-center justify-center rounded-full bg-gradient-to-br from-[#61fd7d] to-[#2bb826] shadow-lg transform transition duration-300 hover:scale-110 hover:shadow-xl active:scale-95"
+      aria-label="WhatsApp Chat">
+    <svg class="pointer-events-none block h-[50px] w-[50px]" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+      <path id="htwasqicona-chat" d="M1023.941 765.153c0 5.606-.171 17.766-.508 27.159-.824 22.982-2.646 52.639-5.401 66.151-4.141 20.306-10.392 39.472-18.542 55.425-9.643 18.871-21.943 35.775-36.559 50.364-14.584 14.56-31.472 26.812-50.315 36.416-16.036 8.172-35.322 14.426-55.744 18.549-13.378 2.701-42.812 4.488-65.648 5.3-9.402.336-21.564.505-27.15.505l-504.226-.081c-5.607 0-17.765-.172-27.158-.509-22.983-.824-52.639-2.646-66.152-5.4-20.306-4.142-39.473-10.392-55.425-18.542-18.872-9.644-35.775-21.944-50.364-36.56-14.56-14.584-26.812-31.471-36.415-50.314-8.174-16.037-14.428-35.323-18.551-55.744-2.7-13.378-4.487-42.812-5.3-65.649-.334-9.401-.503-21.563-.503-27.148l.08-504.228c0-5.607.171-17.766.508-27.159.825-22.983 2.646-52.639 5.401-66.151 4.141-20.306 10.391-39.473 18.542-55.426C34.154 93.24 46.455 76.336 61.07 61.747c14.584-14.559 31.472-26.812 50.315-36.416 16.037-8.172 35.324-14.426 55.745-18.549 13.377-2.701 42.812-4.488 65.648-5.3 9.402-.335 21.565-.504 27.149-.504l504.227.081c5.608 0 17.766.171 27.159.508 22.983.825 52.638 2.646 66.152 5.401 20.305 4.141 39.472 10.391 55.425 18.542 18.871 9.643 35.774 21.944 50.363 36.559 14.559 14.584 26.812 31.471 36.415 50.315 8.174 16.037 14.428 35.323 18.551 55.744 2.7 13.378 4.486 42.812 5.3 65.649.335 9.402.504 21.564.504 27.15l-.082 504.226z"></path>
+    </defs>
+    <linearGradient id="htwasqiconb-chat" gradientUnits="userSpaceOnUse" x1="512.001" y1=".978" x2="512.001" y2="1025.023">
+      <stop offset="0" stop-color="#61fd7d" />
+      <stop offset="1" stop-color="#2bb826" />
+    </linearGradient>
+    <use xlink:href="#htwasqicona-chat" overflow="visible" fill="url(#htwasqiconb-chat)"></use>
+    <g>
+      <path fill="#FFF" d="M783.302 243.246c-69.329-69.387-161.529-107.619-259.763-107.658-202.402 0-367.133 164.668-367.214 367.072-.026 64.699 16.883 127.854 49.017 183.522l-52.096 190.229 194.665-51.047c53.636 29.244 114.022 44.656 175.482 44.682h.151c202.382 0 367.128-164.688 367.21-367.094.039-98.087-38.121-190.319-107.452-259.706zM523.544 808.047h-.125c-54.767-.021-108.483-14.729-155.344-42.529l-11.146-6.612-115.517 30.293 30.834-112.592-7.259-11.544c-30.552-48.579-46.688-104.729-46.664-162.379.066-168.229 136.985-305.096 305.339-305.096 81.521.031 158.154 31.811 215.779 89.482s89.342 134.332 89.312 215.859c-.066 168.243-136.984 305.118-305.209 305.118zm167.415-228.515c-9.177-4.591-54.286-26.782-62.697-29.843-8.41-3.062-14.526-4.592-20.645 4.592-6.115 9.182-23.699 29.843-29.053 35.964-5.352 6.122-10.704 6.888-19.879 2.296-9.176-4.591-38.74-14.277-73.786-45.526-27.275-24.319-45.691-54.359-51.043-63.543-5.352-9.183-.569-14.146 4.024-18.72 4.127-4.109 9.175-10.713 13.763-16.069 4.587-5.355 6.117-9.183 9.175-15.304 3.059-6.122 1.529-11.479-.765-16.07-2.293-4.591-20.644-49.739-28.29-68.104-7.447-17.886-15.013-15.466-20.645-15.747-5.346-.266-11.469-.322-17.585-.322s-16.057 2.295-24.467 11.478-32.113 31.374-32.113 76.521c0 45.147 32.877 88.764 37.465 94.885 4.588 6.122 64.699 98.771 156.741 138.502 21.892 9.45 38.982 15.094 52.308 19.322 21.98 6.979 41.982 5.995 57.793 3.634 17.628-2.633 54.284-22.189 61.932-43.615 7.646-21.427 7.646-39.791 5.352-43.617-2.294-3.826-8.41-6.122-17.585-10.714z" />
+    </g>
+    </svg>
+    </a>
+  </div>
+
+
+
+<style>
+  .text-shadow-lg {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+
+   .hover\\:rotate-1:hover { transform: rotateY(5deg) scale(1.05); }
+  .hover\\:-rotate-1:hover { transform: rotateY(-5deg) scale(1.05); }
+  .hover\\:rotate-2:hover { transform: rotateX(5deg) rotateY(5deg) scale(1.05); }
+ 
+</style>
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Close mobile menu when clicking on a link
+  const mobileLinks = mobileMenu.querySelectorAll('a');
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+  });
+
+
+  // Contact form submission
+  document.getElementById('contactForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData.entries());
+    try {
+      const res = await fetch('/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const result = await res.json();
+      alert(result.message || result.error);
+      if (res.ok) {
+        this.reset();
+      }
+    } catch (error) {
+      alert('An error occurred. Please try again later.');
+    }
+  });
+</script>
+
+<script>
+  const lightbox = GLightbox({
+    selector: '.glightbox'
+  });
+</script>
+
+
+</body>
+</html>
